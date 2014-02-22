@@ -11,21 +11,46 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     </head>
     <body>
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">bytesfree.org</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">bytesfree.org</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
+
+        <div class="site">
+        <br>
           <h2>Octopress 3 Surfaces</h2>
 <p class="meta">22 Feb 2014</p>
 
 <div class="post">
-
 <p>Octopress is a framework designed by <a href="http://brandonmathis.com/">Brandon Mathis</a> for <a href="http://github.com/mojombo/jekyll">Jekyll</a>, the blog aware static site generator powering <a href="http://pages.github.com/">Github Pages</a>. To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress All of that is already taken care of. </p>
 
 <h3>Installation</h3>
@@ -56,6 +81,30 @@
 
 <p><code>$ octopress new post &quot;My Title&quot;</code></p>
 
+<h3>Options</h3>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">$ octopress -h
+octopress 3.0.0.alpha6 -- Octopress is an obsessively designed toolkit for Jekyll blogging.
+
+Usage:
+
+  octopress &lt;subcommand&gt; [options]
+
+Options:
+        -h, --help         Show this message
+        -v, --version      Print the name and version
+        -t, --trace        Show the full backtrace when an error occurs
+
+Subcommands:
+  new                   Creates a new Jekyll site scaffold in PATH
+  publish               Convert a draft to a normal published post.
+  build                 Build your site
+  serve                 Serve your site locally
+  serve                 Serve your site locally
+  doctor                Search site and print specific deprecation warnings
+  doctor                Search site and print specific deprecation warnings
+  docs                  Soon: Launch local server with docs for Octopress v3.0.0.alpha6
+  deploy                Deploy your Octopress site.
+</code></pre></div>
 <p>Octopress also offers powerful support for code snippets:</p>
 <div class="highlight"><pre><code class="ruby language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
