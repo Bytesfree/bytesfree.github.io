@@ -52,7 +52,15 @@
 <p class="meta">22 Feb 2014</p>
 
 <div class="post">
-<p>Octopress is a framework designed by <a href="http://brandonmathis.com/">Brandon Mathis</a> for <a href="http://github.com/mojombo/jekyll">Jekyll</a>, the blog aware static site generator powering <a href="http://pages.github.com/">Github Pages</a>. To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress All of that is already taken care of. </p>
+<p>In this blog post we&#39;re going to talk a bit about <a href="https://github.com/octopress/octopress">Octopress 3</a>. </p>
+
+<blockquote>
+<p>Octopress is a framework designed by <a href="http://brandonmathis.com/">Brandon Mathis</a> for <a href="http://github.com/mojombo/jekyll">Jekyll</a>, the blog aware static site generator powering <a href="http://pages.github.com/">Github Pages</a>. </p>
+</blockquote>
+
+<p>Octopress 3 is described as <strong><em>A Ruby Command-Line Interface shipped as a Gem</em></strong> and as such is a complete rewrite of the old Octopress that we all love. It&#39;s currently at 3.0.0.alpha6 and getting better with every release. It is in no way complete however and is missing support for themes and plugins for example. There is also some oddities (missing bits) with the Markdown portion of it.</p>
+
+<p>Regardless once completed, <a href="https://github.com/octopress/octopress">Octopress 3</a> will be an pretty significant upgrade and improvement over <a href="https://github.com/imathis/octopress">Octopress 2</a>.</p>
 
 <h3>Installation</h3>
 
@@ -82,13 +90,17 @@
 
 <p><code>$ octopress new post &quot;My Title&quot;</code></p>
 
-<h3>Options</h3>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">$ octopress -h
-octopress 3.0.0.alpha6 -- Octopress is an obsessively designed toolkit for Jekyll blogging.
+<p><strong>Generating a new Page</strong></p>
+
+<p><code>$ octopress new page --path about/index.markdown</code></p>
+
+<h3>Other Options/Subcommands</h3>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>octopress -h
+octopress 3.0.0.alpha6 -- Octopress is an obsessively designed toolkit <span class="k">for </span>Jekyll blogging.
 
 Usage:
 
-  octopress &lt;subcommand&gt; [options]
+  octopress &lt;subcommand&gt; <span class="o">[</span>options<span class="o">]</span>
 
 Options:
         -h, --help         Show this message
@@ -103,15 +115,8 @@ Subcommands:
   serve                 Serve your site locally
   doctor                Search site and print specific deprecation warnings
   doctor                Search site and print specific deprecation warnings
-  docs                  Soon: Launch local server with docs for Octopress v3.0.0.alpha6
+  docs                  Soon: Launch <span class="nb">local </span>server with docs <span class="k">for </span>Octopress v3.0.0.alpha6
   deploy                Deploy your Octopress site.
-</code></pre></div>
-<p>Octopress also offers powerful support for code snippets:</p>
-<div class="highlight"><pre><code class="ruby language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">&#39;Tom&#39;</span><span class="p">)</span>
-<span class="c1">#=&gt; prints &#39;Hi, Tom&#39; to STDOUT.</span>
 </code></pre></div>
 </div>
 
