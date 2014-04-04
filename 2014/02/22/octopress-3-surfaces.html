@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Octopress 3 Surfaces</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">bytesfree.org</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+          <!--
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>-->
+          </ul>
+                    <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+        <div class="site">
+        <br>
+          <h2>Octopress 3 Surfaces</h2>
+<p class="meta">22 Feb 2014</p>
+
+<div class="post">
+<p>In this blog post we&#39;re going to talk a bit about <a href="https://github.com/octopress/octopress">Octopress 3</a>. </p>
+
+<blockquote>
+<p>Octopress is a framework designed by <a href="http://brandonmathis.com/">Brandon Mathis</a> for <a href="http://github.com/mojombo/jekyll">Jekyll</a>, the blog aware static site generator powering <a href="http://pages.github.com/">Github Pages</a>. </p>
+</blockquote>
+
+<p>Octopress 3 is described as <strong><em>A Ruby Command-Line Interface shipped as a Gem</em></strong> and as such is a complete rewrite of the old Octopress that we all love. It&#39;s currently at 3.0.0.alpha6 and getting better with every release. It is in no way complete however and is missing support for themes and plugins for example. There is also some oddities (missing bits) with the Markdown portion of it.</p>
+
+<p>Regardless once completed, <a href="https://github.com/octopress/octopress">Octopress 3</a> will be an pretty significant upgrade and improvement over <a href="https://github.com/imathis/octopress">Octopress 2</a>.</p>
+
+<h3>Installation</h3>
+
+<p>Add this line to your application&#39;s Gemfile:</p>
+
+<p><code>gem &#39;octopress&#39;</code></p>
+
+<p>And then execute:</p>
+
+<p><code>$ bundle</code></p>
+
+<p>Or install it yourself as:</p>
+
+<p><code>$ gem install octopress</code></p>
+
+<h3>Usage</h3>
+
+<p><strong>Generating a new site</strong></p>
+
+<p>To create a new scaffold of directories and files in a new directory named my_blog:</p>
+
+<p><code>$ octopress new my_blog</code></p>
+
+<p><strong>Generating a new Post</strong></p>
+
+<p>To create a new post just run:</p>
+
+<p><code>$ octopress new post &quot;My Title&quot;</code></p>
+
+<p><strong>Generating a new Page</strong></p>
+
+<p><code>$ octopress new page --path about/index.markdown</code></p>
+
+<h3>Other Options/Subcommands</h3>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="nv">$ </span>octopress -h
+octopress 3.0.0.alpha6 -- Octopress is an obsessively designed toolkit <span class="k">for </span>Jekyll blogging.
+
+Usage:
+
+  octopress &lt;subcommand&gt; <span class="o">[</span>options<span class="o">]</span>
+
+Options:
+        -h, --help         Show this message
+        -v, --version      Print the name and version
+        -t, --trace        Show the full backtrace when an error occurs
+
+Subcommands:
+  new                   Creates a new Jekyll site scaffold in PATH
+  publish               Convert a draft to a normal published post.
+  build                 Build your site
+  serve                 Serve your site locally
+  serve                 Serve your site locally
+  doctor                Search site and print specific deprecation warnings
+  doctor                Search site and print specific deprecation warnings
+  docs                  Soon: Launch <span class="nb">local </span>server with docs <span class="k">for </span>Octopress v3.0.0.alpha6
+  deploy                Deploy your Octopress site.
+</code></pre></div>
+</div>
+
+
+          <div class="blog-footer">
+            <div class="contact">
+              <p>
+                Bytesfree<br />
+                info@bytesfree.org
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/bytesfree">github.com/bytesfree</a><br />
+                <a href="https://twitter.com/bytesfr33">twitter.com/bytesfr33</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
