@@ -1563,7 +1563,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.9.3)
+    ffi (1.9.24)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.14.6)
@@ -1588,7 +1588,6 @@ GEM
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     jmespath (1.6.2)
-    json (2.3.0)
     kramdown (2.3.1)
       rexml
     liquid (4.0.4)
